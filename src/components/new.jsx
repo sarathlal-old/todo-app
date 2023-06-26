@@ -7,8 +7,10 @@ function New({todos, addNew}){
     }
 
     return(
-        <>
-            <a href="#" onClick={addNewToDo}>Add New</a>
+        <> 
+        <p>
+            <span onClick={addNewToDo}>Add New</span>
+        </p>
         </>
     )
 }
