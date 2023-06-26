@@ -6,12 +6,21 @@ function Item({todos, todo, updateToDo, index}){
         updateToDo(elements)
     }
 
+    function remove(){
+        let elements = [...todos];
+        elements.splice(index, 1);
+        updateToDo(elements)
+    }
+
     return(
         <>
-            <li key={index}><input type="text" value={todo.text} onChange={updateText} /></li>
+            <li key={index}>
+                <input type="text" value={todo.text} onChange={updateText} />
+                <span onClick={remove}>Delete</span>
+            </li>
         </>
     )
-    
+
 }
 
 export default Item

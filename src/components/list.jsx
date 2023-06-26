@@ -4,7 +4,7 @@ import Item from './item.jsx'
 import New from './new.jsx'
 
 function List() {
-    const [todos, setToDo] = useState([{'text':"First one"}, {'text':"Second One"}])
+    const [todos, setToDo] = useState([])
     return(
         <>
         <ul>
